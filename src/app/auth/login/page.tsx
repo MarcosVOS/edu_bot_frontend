@@ -13,6 +13,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { CircleUserRound } from "lucide-react";
+import Link from "next/link";
 
 export default function Login() {
   return (
@@ -65,7 +66,7 @@ export default function Login() {
           <Separator className="my-4" />
           Não tem uma conta ?
           <Button variant="link" className="text-[#4865B0]">
-            Registre-se
+            <Link href={"/auth/signup"}>Registre-se</Link>
           </Button>
         </CardFooter>
       </Card>
